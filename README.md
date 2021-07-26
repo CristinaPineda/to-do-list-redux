@@ -11,4 +11,4 @@ ou
 
 2. Criação do reducer, atribui-se ele no store, ele recebe uma callback com o estado e a action, o bloco switch e o default, nele as action serão escritas.
 
-
+3. Criar as ações que vão inserir tarefas na lista, remover tarefas da lista e completar tarefas da lista.
