@@ -26,4 +26,12 @@ https://www.geeksforgeeks.org/lodash-_-uniqueid-method/
 As funções checkTask e deleteTask (passadas ao redecer pelo dispatch()) serão realizadas quano forem chamadas pelas ações
 do usuário na lista que será renderizada no próximo passo.
 
+7. Subscribe que renderiza a função cada vez que uma action acontecer.
+
+*sobre o lodash com requisição ajax*
+https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js
+https://cursos.alura.com.br/forum/topico-virgulas-estranhas-aparecendo-apos-requisicao-ajax-21215
+
+8. Para executar a aplicação no navegador uso a extensão Live Server no VsCode.
+
 
