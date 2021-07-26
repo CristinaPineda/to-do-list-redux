@@ -12,3 +12,8 @@ ou
 2. Criação do reducer, atribui-se ele no store, ele recebe uma callback com o estado e a action, o bloco switch e o default, nele as action serão escritas.
 
 3. Criar as ações que vão inserir tarefas na lista, remover tarefas da lista e completar tarefas da lista.
+
+4. Enviar action para adicionar tarefa para o reducer, uso de um 'escutador' no input para fazer isso
+Para cada linha de tarefa ter um id unico e ser usado nas actions usei a biblioteca Lodash, para mais informações:
+
+https://blog.betrybe.com/desenvolvimento-web/lodash-o-que-e-como-usar/
