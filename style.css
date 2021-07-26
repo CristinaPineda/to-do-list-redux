@@ -1,0 +1,49 @@
+body {
+    background-color: white;
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Caveat', cursive;
+}
+
+.header {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+    font-size: 24px;
+}
+
+#input-task {
+    width: 300px;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    border-color: lightseagreen;
+    color: white;
+}
+
+.button-add {
+    background-color: violet;
+    border-radius: 5px;
+    border-color: greenyellow;
+    color: white;
+    width: max-content;
+}
+
+#remove {
+    background-color: tomato;
+    border-radius: 5px;
+    border-color: turquoise;
+    color: white;
+    width: max-content;
+}
+
+.task-container {
+    margin: 10px;
+}
+
+#about {
+    text-align: right;
+}   

@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <title>Redux To-Do list</title>
 </head>
 <body>
+    <h5 id="about">Make with Redux / by <a href="https://www.linkedin.com/in/cristina-pineda-41596044/">Cristina Pineda</a></h5>
     <header class="header">
         <div>
             <h1>TO-DO LIST ✅</h1>
         </div>
     </header>
-    <main>
-        <form id="form-task">
-            <input id="input-task" placeholder="Next task..." type="text">
-            <button class="button add" type="submit">Add</button>
-        </form>
-        
-        <div id="task-container"></div>     
+    <main class="main">
+            <form id="form-task">
+                <input id="input-task" placeholder="Next task..." type="text">
+                <button class="button-add" type="submit">Add</button>
+            </form>
+            <div id="task-container"></div>     
     </main>
         
         <script src="./script.js"></script>

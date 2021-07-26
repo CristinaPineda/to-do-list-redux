@@ -84,7 +84,7 @@ const listTask = () => {
       >
         <label ${task.completed && `style="text-decoration: line-through"`}>${task.value}</label>
       </input>
-      <button id="remove" class="buttonRemove" onclick="deleteTask(${task.id})">remove</button>
+      <button id="remove" class="buttonRemove" onclick="deleteTask(${task.id})">Remove</button>
     </div>
     `
   ).join('')
