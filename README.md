@@ -17,5 +17,13 @@ ou
 Para cada linha de tarefa ter um id unico e ser usado nas actions usei a biblioteca Lodash, para mais informações:
 
 https://blog.betrybe.com/desenvolvimento-web/lodash-o-que-e-como-usar/
+https://www.geeksforgeeks.org/lodash-_-uniqueid-method/
 
 5. Action para 'check' das tarefas 
+
+6. Remove tarefa da lista 
+
+As funções checkTask e deleteTask (passadas ao redecer pelo dispatch()) serão realizadas quano forem chamadas pelas ações
+do usuário na lista que será renderizada no próximo passo.
+
+

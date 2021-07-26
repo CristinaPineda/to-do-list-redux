@@ -61,3 +61,8 @@ const checkTask = id => {
     },
   });
 };
+
+// deleta uma tarefa 
+const deleteTask = id => {
+  store.dispatch({ type: DELETE_TASK, payload: id.toString() });
+};
