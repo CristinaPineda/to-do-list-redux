@@ -12,16 +12,17 @@ body {
 }
 
 .main {
-    text-align: center;
     font-size: 24px;
+    text-align: center;
 }
 
 #input-task {
-    width: 300px;
     background-color: lightskyblue;
-    border-radius: 5px;
     border-color: lightseagreen;
-    color: white;
+    border-radius: 5px;
+    color: darkblue;
+    font-size: 16px;
+    width: 300px;
 }
 
 .button-add {
@@ -29,7 +30,13 @@ body {
     border-radius: 5px;
     border-color: greenyellow;
     color: white;
+    cursor: pointer;
     width: max-content;
+}
+
+.button-add:hover {
+    background-color: darkmagenta;
+    border-color: darkorange;
 }
 
 #remove {
@@ -37,7 +44,14 @@ body {
     border-radius: 5px;
     border-color: turquoise;
     color: white;
+    margin-left: 10px;
     width: max-content;
+}
+
+#remove:hover {
+    background-color: darkturquoise;
+    border-color: deeppink;
+    color: black;
 }
 
 .task-container {
