@@ -50,3 +50,14 @@ document.getElementById('form-task').addEventListener('submit', e => {e.preventD
   document.getElementById('input-task').value = '';
 })
 
+// dá um check nas tarefas
+const checkTask = id => {
+  const item = document.querySelector(`input[key="${id}"]`);
+  store.dispatch({
+    type: CHECK_TASK,
+    payload: {
+      id: id.toString(),
+      completed: item.checked,
+    },
+  });
+};

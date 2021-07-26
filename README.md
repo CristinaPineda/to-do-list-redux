@@ -17,3 +17,5 @@ ou
 Para cada linha de tarefa ter um id unico e ser usado nas actions usei a biblioteca Lodash, para mais informações:
 
 https://blog.betrybe.com/desenvolvimento-web/lodash-o-que-e-como-usar/
+
+5. Action para 'check' das tarefas 
