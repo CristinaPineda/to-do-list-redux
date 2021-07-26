@@ -1,3 +1,5 @@
+const INITIAL_STATE = [] // inicia com a lista vazia pois não foi adicionada nenhuma tarefa
+
 // 1 criação do store 
 const store = Redux.createStore(reducer);
 
