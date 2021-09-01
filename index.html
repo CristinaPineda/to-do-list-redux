@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-    <title>Redux To-Do list</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <title>Redux To-Do list</title>
 </head>
+
 <body>
-    <h4 id="about">Make with Redux / by <a href="https://www.linkedin.com/in/cristina-pineda-41596044/">Cristina Pineda</a></h4>
-    <header class="header">
-        <div>
-            <h1>TO-DO LIST ✅</h1>
+  <h4 id="about">Make with Redux / by <a href="https://www.linkedin.com/in/cristina-pineda-41596044/">Cristina
+      Pineda</a></h4>
+  <div class="about">
+    <button class="btns btn-about button-add">About</button>
+  </div>
+  <header class="header">
+    <div>
+      <h1>TO-DO LIST ✅</h1>
+    </div>
+  </header>
+  <main class="main">
+    <form id="form-task">
+      <input autocomplete="off" id="input-task" placeholder="Next task..." type="text">
+      <button class="button-add" type="submit">Add</button>
+    </form>
+    <div id="task-container"></div>
+    <div id="modal-content" class="modal-container">
+      <div class="modal">
+        <button class="close">x</button>
+        <h2>To do list feito com:</h2>
+        <div class="icons">
+          <p><img alt='cris-git'
+              src='https://icongr.am/devicon/html5-original-wordmark.svg?size=50&color=currentColor' /></p>
+          <p><img alt='cris-css'
+              src='https://icongr.am/devicon/css3-original-wordmark.svg?size=50&color=currentColor' /></p>
+          <p><img src='https://icongr.am/devicon/javascript-original.svg?size=50&color=currentColor' /></p>
+          <p><img alt='cris-css' src="https://img.icons8.com/material-rounded/50/000000/redux.png"/></p>
         </div>
-    </header>
-    <main class="main">
-            <form id="form-task">
-                <input autocomplete="off" id="input-task" placeholder="Next task..." type="text">
-                <button class="button-add" type="submit">Add</button>
-            </form>
-            <div id="task-container"></div>     
-    </main>
-        
-        <script src="./script.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
-    </body>
-    </html>
-    
+        <div class="skills">
+          <div class="skills-ul">
+            <p class="skills-li">Manipulação do DOM</p>
+            <p class="skills-li">Redux para gerenciamento de estado da aplicação</p>
+            <p class="skills-li">Manipulação do JavaScript</p>
+            <p class="skills-li">Criação de estilos responsivos</p>
+          </div>
+        </div>
+        <div class="links">
+          <p>
+            <img alt="cris-git" src="https://icongr.am/devicon/github-original.svg?size=50&color=currentColor" />
+            <a href="https://github.com/CristinaPineda/to-do-list-redux" target="blank">Conheça o repositório do projeto</a>
+          </p>
+          <p>
+            <img alt="cris-link" src="https://img.icons8.com/color/48/000000/linkedin.png" />
+            <a href="https://www.linkedin.com/in/cristina-pineda-41596044/" target="blank">Linkedin</a>
+          </p>
+          <p>
+            <img alt="cris-zap" src="https://img.icons8.com/color/48/000000/whatsapp.png" />
+            Meu contato: (11)94720.1686
+          </p>
+          <p>
+            <img alt="cris-mail" src="https://img.icons8.com/fluency/48/000000/email-open.png" />
+            Email: cristinadaspineda@yahoo.com.br
+          </p>
+        </div>
+  </main>
+
+  <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+</body>
+
+</html>

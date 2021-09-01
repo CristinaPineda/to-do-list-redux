@@ -1,63 +1,192 @@
 body {
-    background-color: white;
-    background-image: url(./background.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    font-family: 'Caveat', cursive;
+  background-color: white;
+  background-image: url(./background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-family: 'Caveat', cursive;
 }
 
 .header {
-    margin-top: 10%;
-    text-align: center;
+  margin-top: 10%;
+  text-align: center;
 }
 
 .main {
-    font-size: 24px;
-    text-align: center;
+  font-size: 26px;
+  text-align: center;
 }
 
 #input-task {
-    background-color: lightskyblue;
-    border-color: lightseagreen;
-    border-radius: 5px;
-    color: darkblue;
-    font-size: 16px;
-    width: 300px;
+  background-color: lightskyblue;
+  border-color: lightseagreen;
+  border-radius: 5px;
+  color: darkblue;
+  font-size: 16px;
+  width: 300px;
+  padding: 5px;
 }
 
 .button-add {
-    background-color: violet;
-    border-radius: 5px;
-    border-color: greenyellow;
-    color: white;
-    cursor: pointer;
-    width: max-content;
+  background-color: violet;
+  border-radius: 5px;
+  border-color: greenyellow;
+  color: white;
+  cursor: pointer;
+  width: max-content;
+  padding: 8px;
 }
 
 .button-add:hover {
-    background-color: darkmagenta;
-    border-color: darkorange;
+  background-color: darkmagenta;
+  border-color: darkorange;
+}
+
+.button-save :disabled {
+  background-color: gray;
+  border-radius: 5px;
+  border-color: greenyellow;
+  color: white;
+  cursor: pointer;
+  width: max-content;
+  padding: 8px;
+}
+
+.button-save :enabled {
+  background-color: purple;
+  border-radius: 5px;
+  border-color: greenyellow;
+  color: white;
+  cursor: pointer;
+  width: max-content;
+  padding: 8px;
 }
 
 #remove {
-    background-color: tomato;
-    border-radius: 5px;
-    border-color: turquoise;
-    color: white;
-    margin-left: 10px;
-    width: max-content;
+  background-color: tomato;
+  border-radius: 5px;
+  border-color: turquoise;
+  color: white;
+  margin-left: 10px;
+  width: max-content;
+  padding: 5px;
 }
 
 #remove:hover {
-    background-color: darkturquoise;
-    border-color: deeppink;
-    color: black;
+  background-color: darkturquoise;
+  border-color: deeppink;
+  color: black;
 }
 
 .task-container {
-    margin: 10px;
+  margin: 10px;
 }
 
 #about {
-    text-align: right;
-}   
+  text-align: right;
+}
+
+.about {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-container {
+  align-items: center;
+  background-color: rgba(112, 128, 144, .6);
+  color: white;
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  z-index: 2000;
+}
+
+.modal-container.open {
+  display: flex;
+}
+
+.modal {
+  background-color: rgba(255, 0, 255, .7);
+  border: 5px solid rgb(0, 255, 0);
+  border-radius: 7px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  min-width: 250px;
+  padding: 40px;
+  position: relative;
+  width: 60%;
+}
+
+.modal a {
+  color: white;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 50%;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.open .modal {
+  animation: modal .3s;
+}
+
+.skills-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links p {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.links a {
+  margin-left: 8px;
+}
+
+.links a:hover {
+  color: yellow;
+}
+
+.close {
+  background-color: rgba(255, 0, 255, .7);
+  border: none;
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  font-size: 28px;
+  height: 50px;
+  right: 0px;
+  top: 0px;
+  width: 50px;
+}
+
+.close:hover {
+  color: yellow;
+}
